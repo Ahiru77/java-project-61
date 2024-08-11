@@ -6,7 +6,6 @@ public class Calc {
 
     public static void play() {
         Cli.greet();
-
         int num1;
         int num2;
         int express;
@@ -15,9 +14,7 @@ public class Calc {
         int winCount = 0;
         int rightInput = 5;
         boolean toNext;
-
         System.out.println("What is the result of the expression?");
-
         while (winCount < 3) {
             num1 = (int) (Math.random() * 10);
             num2 = (int) (Math.random() * 10);
@@ -39,7 +36,6 @@ public class Calc {
                 default:
                     System.out.println("Invalid expression");
             }
-
             toNext = Engine.isRight(quest, rightInput);
             if (!toNext) {
                 break;

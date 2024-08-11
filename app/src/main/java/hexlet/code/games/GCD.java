@@ -10,7 +10,6 @@ public class GCD {
 
     public static void play() {
         Cli.greet();
-
         int num1;
         int num2;
 

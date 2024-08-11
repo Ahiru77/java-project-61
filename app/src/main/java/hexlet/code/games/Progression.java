@@ -6,7 +6,6 @@ public class Progression {
 
     public static void play() {
         Cli.greet();
-
         int missingIndex;
         var prog = new String[10];
         int startNum;

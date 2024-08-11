@@ -6,7 +6,6 @@ public class Even {
 
     public static void play() {
         Cli.greet();
-
         int num;
 
         int winCount = 0;
