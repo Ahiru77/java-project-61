@@ -9,8 +9,4 @@
 ## Progression
 [Game preview](https://asciinema.org/a/qQalpZGp1le1uE4iB7W2TI5Oa)
 ## Prime
-<<<<<<< HEAD
 [Game preview](https://asciinema.org/a/V94d6P9AGfOweC30MxH0OHizz)
-=======
-[Game preview](https://asciinema.org/a/V94d6P9AGfOweC30MxH0OHizz)
->>>>>>> 866fe913ecdf41da28a6e606270b5ba25e3fd480
