@@ -23,7 +23,7 @@ public class GCD {
             num1 = (int) (Math.random() * 50);
             num2 = (int) (Math.random() * 50);
             rightInput = gcd(num1, num2);
-            quest = num1 + " | " + num2;
+            quest = num1 + " " + num2;
 
             toNext = Engine.isRight(quest, rightInput);
             if (!toNext) {
