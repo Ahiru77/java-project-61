@@ -17,10 +17,10 @@ public class GCD {
         System.out.println("Find the greatest common divisor of given numbers.");
 
         while (winCount < 3) {
-            var number1 = (int) (Math.random() * 50);
-            var number2 = (int) (Math.random() * 50);
-            rightInput = gcd(number1, number2);
-            var quest = number1 + " " + number2;
+            var num1 = (int) (Math.random() * 50);
+            var num2 = (int) (Math.random() * 50);
+            rightInput = gcd(num1, num2);
+            var quest = num1 + " " + num2;
 
             toNext = Engine.isRight(quest, rightInput);
             if (!toNext) {
