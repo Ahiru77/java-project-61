@@ -20,7 +20,7 @@ public class Progression {
         while (winCount < 3) {
             missingIndex = (int) (Math.random() * 10);
             startNum = (int) (Math.random() * 20);
-            diff = (int) (Math.random() * (11 - 1) + 1);
+            diff = (int) (Math.random() * 10);
             prog[0] = startNum + " ";
 
             for (int i = 1; i < prog.length; i++) {
