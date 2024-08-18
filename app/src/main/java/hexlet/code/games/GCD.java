@@ -10,16 +10,16 @@ public class GCD {
 
     public static void play() {
         Cli.greet();
-		int maxCountToWin = 3;
+		final int maxCount = 3;
         String quest;
         int winCount = 0;
         int rightInput;
         boolean toNext;
         System.out.println("Find the greatest common divisor of given numbers.");
 
-        while (winCount < maxCountToWin) {
-            int number1 = (int) (Math.random() * 100);
-            int number2 = (int) (Math.random() * 100);
+        while (winCount < maxCount) {
+            final int number1 = (int) (Math.random() * 100);
+            final int number2 = (int) (Math.random() * 100);
             rightInput = gcd(number1, number2);
             quest = number1 + " " + number2;
 
