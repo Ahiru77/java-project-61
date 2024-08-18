@@ -9,7 +9,7 @@ public class Calc {
         final int maxCount = 3;
         String quest = "";
         int winCount = 0;
-        int rightInput;
+        int rightInput = 0;
         boolean toNext;
         System.out.println("What is the result of the expression?");
         while (winCount < maxCount) {
