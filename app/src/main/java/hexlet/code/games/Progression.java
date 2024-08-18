@@ -6,7 +6,8 @@ public class Progression {
 
     public static void play() {
         Cli.greet();
-        final var prog = new String[10];
+        final int arrayLength = 10;
+        var prog = new String[arrayLength];
         final int maxCount = 3;
 
         String quest;
@@ -16,8 +17,9 @@ public class Progression {
         System.out.println("What number is missing in the progression?");
 
         while (winCount < maxCount) {
+            final int startRandom = (int) (Math.random() * 20);
             final int missingIndex = (int) (Math.random() * 10);
-            int startNum = (int) (Math.random() * 20);
+            int startNum = startRandom;
             final int diff = (int) (Math.random() * (11 - 1) + 1);
             prog[0] = startNum + " ";
 
