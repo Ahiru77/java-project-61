@@ -10,17 +10,20 @@ public class Progression {
         var prog = new String[10];
         int startNum;
         int diff;
-
+		int randomMax1 = 10;
+		int randomMax2 = 20;
+		int winMax = 3;
+		
         String quest;
         int winCount = 0;
         String rightInput;
         boolean toNext;
         System.out.println("What number is missing in the progression?");
 
-        while (winCount < 3) {
-            missingIndex = (int) (Math.random() * 10);
-            startNum = (int) (Math.random() * 20);
-            diff = (int) (Math.random() * 10);
+        while (winCount < winMax) {
+            missingIndex = (int) (Math.random() * randomMax1);
+            startNum = (int) (Math.random() * randomMax2);
+            diff = (int) (Math.random() * randomMax1);
             prog[0] = startNum + " ";
 
             for (int i = 1; i < prog.length; i++) {
