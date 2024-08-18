@@ -6,22 +6,17 @@ public class Calc {
 
     public static void play() {
         Cli.greet();
-        int num1;
-        int num2;
-        int express;
-		int randomMax1 = 10;
-		int randomMax2 = 3;
-		int winMax = 3;
+		int maxCount = 3;
 		
         String quest = "";
         int winCount = 0;
         int rightInput = 5;
         boolean toNext;
         System.out.println("What is the result of the expression?");
-        while (winCount < winMax) {
-            num1 = (int) (Math.random() * randomMax1);
-            num2 = (int) (Math.random() * randomMax1);
-            express = (int) (Math.random() * randomMax2);
+        while (winCount < maxCount) {
+            final int num1 = (int) (Math.random() * 10);
+            final int num2 = (int) (Math.random() * 10);
+            final int express = (int) (Math.random() * 3);
 
             switch (express) {
                 case 0:

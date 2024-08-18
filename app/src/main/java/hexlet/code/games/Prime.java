@@ -8,7 +8,6 @@ public class Prime {
         if (num < 2) {
             return "no";
         }
-        // Новый метод
         for (int k = 2; k <= Math.sqrt(num); k++) {
             if (num % k == 0) {
                 return "no";
@@ -19,9 +18,7 @@ public class Prime {
 
     public static void play() {
         Cli.greet();
-        int num;
-		int randomMax = 150;
-		int winMax = 3;
+		final int maxCount = 3;
 		
         String quest;
         int winCount = 0;
@@ -29,8 +26,8 @@ public class Prime {
         boolean toNext;
 
         System.out.println("Answer 'yes' if given number is prime. Otherwise answer 'no'.");
-        while (winCount < winMax) {
-            num = (int) (Math.random() * randomMax);
+        while (winCount < maxCount) {
+            final int num = (int) (Math.random() * 150);
             quest = num + "";
             rightInput = isPrime(num);
             toNext = Engine.isRight(quest, rightInput);
