@@ -6,11 +6,10 @@ public class Calc {
 
     public static void play() {
         Cli.greet();
-		int maxCount = 3;
-		
+        final int maxCount = 3;
         String quest = "";
         int winCount = 0;
-        int rightInput = 5;
+        int rightInput;
         boolean toNext;
         System.out.println("What is the result of the expression?");
         while (winCount < maxCount) {

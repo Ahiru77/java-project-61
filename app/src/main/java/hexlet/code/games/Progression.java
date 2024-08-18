@@ -6,9 +6,9 @@ public class Progression {
 
     public static void play() {
         Cli.greet();
-        var prog = new String[10];
-		final int maxCount = 3;
-		
+        final var prog = new String[10];
+        final int maxCount = 3;
+
         String quest;
         int winCount = 0;
         String rightInput;

@@ -20,7 +20,7 @@ public class Engine {
     }
 
     public static void isWin(int winCount) {
-		int winMax = 3;
+        final int winMax = 3;
         if (winCount == winMax) {
             System.out.println("Congratulations, " + Cli.getName() + "!");
         } else {

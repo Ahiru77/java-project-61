@@ -18,8 +18,7 @@ public class Prime {
 
     public static void play() {
         Cli.greet();
-		final int maxCount = 3;
-		
+        final int maxCount = 3;
         String quest;
         int winCount = 0;
         String rightInput;

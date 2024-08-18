@@ -6,7 +6,7 @@ public class Even {
 
     public static void play() {
         Cli.greet();
-		final int maxCount = 3;
+        final int maxCount = 3;
 
         int winCount = 0;
         Object rightInput;
