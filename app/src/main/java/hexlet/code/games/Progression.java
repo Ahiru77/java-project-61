@@ -15,7 +15,7 @@ public class Progression {
         int winCount = 0;
         String rightInput;
         boolean toNext;
-        System.out.println("What is the result of the expression?");
+        System.out.println("What number is missing in the progression?");
 
         while (winCount < 3) {
             missingIndex = (int) (Math.random() * 10);
