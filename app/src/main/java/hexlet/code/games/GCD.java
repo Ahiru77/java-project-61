@@ -5,7 +5,10 @@ import hexlet.code.Engine;
 public class GCD {
 
     public static int gcd(int a, int b) {
-        return (a % b == 0) ? Math.abs(b) : gcd(b, a % b);
+        if (b == 0) {
+            return a;
+        }
+        return gcd(b, a % b);
     }
 
     public static void play() {
