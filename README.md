@@ -3,10 +3,10 @@
 ## Even
 [![asciicast](https://asciinema.org/a/EIwzoMGPxljNkxsXzIbvy2Gx2.svg)](https://asciinema.org/a/EIwzoMGPxljNkxsXzIbvy2Gx2)
 ## Calc
-[Game preview](https://asciinema.org/a/ufzWb4pSVwGKlVWkOdRXZ7NnN)
+[![asciicast](https://asciinema.org/a/ufzWb4pSVwGKlVWkOdRXZ7NnN.svg)](https://asciinema.org/a/ufzWb4pSVwGKlVWkOdRXZ7NnN)
 ## GCD
-[Game preview](https://asciinema.org/a/29ySk6dPNv5xjGLJk6R2S6lCR)
+[![asciicast](https://asciinema.org/a/29ySk6dPNv5xjGLJk6R2S6lCR.svg)](https://asciinema.org/a/29ySk6dPNv5xjGLJk6R2S6lCR)
 ## Progression
-[Game preview](https://asciinema.org/a/qQalpZGp1le1uE4iB7W2TI5Oa)
+[![asciicast](https://asciinema.org/a/qQalpZGp1le1uE4iB7W2TI5Oa.svg)](https://asciinema.org/a/qQalpZGp1le1uE4iB7W2TI5Oa)
 ## Prime
-[Game preview](https://asciinema.org/a/V94d6P9AGfOweC30MxH0OHizz)
+[![asciicast](https://asciinema.org/a/V94d6P9AGfOweC30MxH0OHizz.svg)](https://asciinema.org/a/V94d6P9AGfOweC30MxH0OHizz)
