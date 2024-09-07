@@ -2,29 +2,28 @@ package hexlet.code;
 import java.util.Scanner;
 
 public class Engine {
-    public static boolean isRight(Object quest, Object rightInput) {
-        System.out.println("Question: " + quest);
-        Scanner userScan = new Scanner(System.in);
-        String userInput = userScan.nextLine();
+    public static final int ROUNDS = 3;
 
-        System.out.println("Your Answer: " + userInput);
-        String pass = "Correct!";
-        String fail = "'" + userInput + "' is wrong answer ;(. Correct answer was '" + rightInput + "'.";
-        if (userInput.equals(rightInput.toString())) {
-            System.out.println(pass);
-            return true;
-        } else {
-            System.out.println(fail);
-            return false;
-        }
-    }
+    public static void startGame(String description, String[][] quiz) {
+        Cli.greet();
+        int winCount = 0;
 
-    public static void isWin(int winCount) {
-        final int winMax = 3;
-        if (winCount == winMax) {
-            System.out.println("Congratulations, " + Cli.getName() + "!");
-        } else {
-            System.out.println("Let's try again, " + Cli.getName() + "!");
+        System.out.println(description);
+        while (winCount < ROUNDS) {
+            String question = quiz[winCount][0];
+            String answer = quiz[winCount][1];
+            System.out.println("Question: " + question);
+            Scanner userScan = new Scanner(System.in);
+            String userInput = userScan.nextLine();
+            if (!userInput.equals(answer)) {
+                System.out.println("'" + userInput + "' is wrong answer ;(. "
+                        + "Correct answer was '" + answer + "'.");
+                System.out.println("Let's try again, " + Cli.getName() + "!");
+                break;
+            }
+            System.out.println("Correct!");
+            winCount++;
         }
+        System.out.println("Congratulations, " + Cli.getName() + "!");
     }
 }

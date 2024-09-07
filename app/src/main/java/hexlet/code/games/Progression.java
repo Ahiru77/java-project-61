@@ -1,42 +1,29 @@
 package hexlet.code.games;
-import hexlet.code.Cli;
 import hexlet.code.Engine;
 
 public class Progression {
 
     public static void play() {
-        Cli.greet();
+
         final int arrayLength = 10;
         var prog = new String[arrayLength];
-        final int maxCount = 3;
 
-        String quest;
-        int winCount = 0;
-        String rightInput;
-        boolean toNext;
-        System.out.println("What number is missing in the progression?");
-
-        while (winCount < maxCount) {
+        final String description = "What number is missing in the progression?";
+        String[][] quiz = new String[Engine.ROUNDS][2];
+        for (int i = 0; i < Engine.ROUNDS; i++) {
             final int startRandom = (int) (Math.random() * 20);
             final int missingIndex = (int) (Math.random() * 10);
             int startNum = startRandom;
             final int diff = (int) (Math.random() * (11 - 1) + 1);
             prog[0] = startNum + " ";
-
-            for (int i = 1; i < prog.length; i++) {
+            for (int n = 1; n < prog.length; n++) {
                 startNum = startNum + diff;
-                prog[i] = startNum + " ";
+                prog[n] = startNum + " ";
             }
-            rightInput = prog[missingIndex].trim();
+            quiz[i][1] = prog[missingIndex].trim();
             prog[missingIndex] = ".. ";
-            quest = String.join("", prog);
-
-            toNext = Engine.isRight(quest, rightInput);
-            if (!toNext) {
-                break;
-            }
-            winCount++;
+            quiz[i][0] = String.join("", prog);
         }
-        Engine.isWin(winCount);
+        Engine.startGame(description, quiz);
     }
 }
