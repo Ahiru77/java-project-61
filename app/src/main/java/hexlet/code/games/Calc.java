@@ -28,7 +28,7 @@ public class Calc {
                 default:
                     System.out.println("Invalid expression");
             }
-            Engine.startGame(description, quiz);
         }
+        Engine.startGame(description, quiz);
     }
 }
