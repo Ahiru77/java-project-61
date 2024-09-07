@@ -19,7 +19,7 @@ public class Engine {
                 System.out.println("'" + userInput + "' is wrong answer ;(. "
                         + "Correct answer was '" + answer + "'.");
                 System.out.println("Let's try again, " + Cli.getName() + "!");
-                break;
+                return;
             }
             System.out.println("Correct!");
             winCount++;
